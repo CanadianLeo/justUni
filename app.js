@@ -9,3 +9,8 @@ server.listen(port, '127.0.0.1', function () {
     var address = server.address();
     logger.info('Server starting on ' + address.address + ':' + address.port);
 });
+
+app.get('/', function (req, res) {
+    // TODO: Придумать как реализовать декомпозицию
+    res.send('All be good');
+});
